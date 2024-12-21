@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Pertemuan 21</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header, nav, main, section, article, aside, footer {
+      margin: 0 auto;
+      padding: 1em;
+      max-width: 1200px;
+    }
+
+    header {
+      background: #4CC9FE;
+      color: white;
+      text-align: center;
+      padding: 2em 0;
+    }
+
+    nav {
+      background: #333;
+      color: white;
+      padding: 0.5em;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0 1em;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      padding: 2em 0;
+    }
+
+    section, aside {
+      flex: 1 1 calc(70% - 1em);
+    }
+
+    aside {
+      flex: 1 1 calc(30% - 1em);
+      background: #f4f4f4;
+      padding: 1em;
+    }
+
+    article {
+      background: #e3e3e3;
+      padding: 1em;
+      margin-bottom: 1em;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .label {
+      margin-top: 1em;
+      font-weight: bold;
+    }
+
+    input[type="text"],input[type="radio"], select, textarea{
+      padding: 0.8em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    button {
+      margin-top: 1em;
+      background: #4CAF50;
+      color: white;
+      padding: 0.8em 1.2em;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Universitas Pamulang</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pendaftaran.html">Pendaftaran</a></li>
+      <li><a href="jadwal-pendaftaran.html">Jadwal Pendaftaran</a></li>
+      <li><a href="informasi.html">Informasi</a></li>
+      <li><a href="kontak.html">Hubungi Kami</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home">
+      <article>
+        <h3>Formulir Pendaftaran Mahasiswa Baru Universitas Pamulang</h3>
+        <form action="" method="post">
+            <label for="nama" class="label">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukan Nama Lengkap" required>
+            
+            <label for="panggilan" class="label">Panggilan</label>
+            <input type="text" id="panggilan" name="panggilan" placeholder="Masukan Nama Panggilan" required>
+            
+            <div>
+            <label for="jenis_kelamin" class="label">Jenis Kelamin</label>
+            <div>
+            <input type="radio" name="jenis_kelamin" id="jenis_kelamin">
+            <label for="">Laki-laki</label>
+            </div>
+            <div>
+            <input type="radio" name="jenis_kelamin" id="jenis_kelamin">
+            <label for="">Perempuan</label>
+            </div>
+            </div>
+
+            <div>  
+            <label for="hobbi" class="label">Hobbi</label>
+            <div>
+            <input type="checkbox" name="hobbi" id="hobbi">
+            <label for="">Menulis</label>
+            </div>
+            <div>
+                <input type="checkbox" name="hobbi" id="hobbi">
+                <label for="">Membaca</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="hobbi" id="hobbi">
+                    <label for="">Kuliner</label>
+                    </div>
+            </div>
+
+            <label for="agama" class="label">Agama</label>
+            <select name="agama" id="agama">
+                <option value="">Pilih Agama</option>
+                <option value="islam">Islam</option>
+                <option value="kristen">kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+                <option value="konghucu">Konghucu</option>
+            </select>
+
+            <label for="alamat" class="label">Alamat</label>
+            <textarea name="alamat" id="alamat" cols="30" rows="10" placeholder="Masukan Alamat"></textarea>
+        
+            <button type="submit">Daftar</button>
+        </form>    
+    </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 241011701176 01SIFE010 syahril sidik</p>
+  </footer>
+
+</body>
+</html>
